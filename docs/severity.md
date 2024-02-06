@@ -15,6 +15,7 @@
 - [integration_aws-apigateway](#integration_aws-apigateway)
 - [integration_aws-backup](#integration_aws-backup)
 - [integration_aws-beanstalk](#integration_aws-beanstalk)
+- [integration_aws-ec2](#integration_aws-ec2)
 - [integration_aws-ecs-cluster](#integration_aws-ecs-cluster)
 - [integration_aws-ecs-service](#integration_aws-ecs-service)
 - [integration_aws-efs](#integration_aws-efs)
@@ -228,6 +229,13 @@
 |AWS Beanstalk application latency p90|X|X|-|-|-|
 |AWS Beanstalk application 5xx error rate|X|X|-|-|-|
 |AWS Beanstalk instance root filesystem usage|X|X|-|-|-|
+
+
+## integration_aws-ec2
+
+|Detector|Critical|Major|Minor|Warning|Info|
+|---|---|---|---|---|---|
+|Aws-ec2 heartbeat|X|-|-|-|-|
 
 
 ## integration_aws-ecs-cluster

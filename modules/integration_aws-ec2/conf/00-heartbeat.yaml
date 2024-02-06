@@ -1,0 +1,15 @@
+## Example
+module: aws-ec2
+name: heartbeat
+
+transformation: false
+aggregation: true
+exclude_not_running_vm: true
+filtering: "filter('namespace', 'AWS/EC2')"
+
+signals:
+  signal:
+    metric: "CPUUtilization"
+    filter: "filter('stat', 'mean')"
+rules:
+  critical:
